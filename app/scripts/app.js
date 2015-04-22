@@ -12,7 +12,8 @@ angular
   .module('ticketInspectorApp', [
     'ngResource',
     'ngRoute',
-    'ngTouch'
+    'ngTouch',
+    'ngMaterial'
   ])
   .config(function ($routeProvider) {
     $routeProvider
