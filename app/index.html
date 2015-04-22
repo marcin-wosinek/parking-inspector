@@ -21,35 +21,26 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
+
+    <section layout="row" flex>
+      <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-is-locked-open="$mdMedia('gt-md')">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#/">Home</a></li>
+          <li><a ng-href="#/about">About</a></li>
+          <li><a ng-href="#/">Contact</a></li>
+        </ul>
+      </md-sidenav>
+
+      <md-content layout-padding>
+        <div ng-view=""></div>
+      </md-content>
+
+      <div class="footer">
         <div class="container">
-          <div class="navbar-header">
-
-            <a class="navbar-brand" href="#/">parkingInspector</a>
-          </div>
-
-          <div class="collapse">
-
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
-            </ul>
-          </div>
+          <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
         </div>
       </div>
-    </div>
-
-    <div class="container">
-    <div ng-view=""></div>
-    </div>
-
-    <div class="footer">
-      <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
-    </div>
+    </section>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
