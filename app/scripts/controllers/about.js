@@ -7,7 +7,7 @@
  * # AboutCtrl
  * Controller of the ticketInspectorApp
  */
-angular.module('ticketInspectorApp')
+angular.module('parkingInspectorApp')
   .controller('AboutCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',

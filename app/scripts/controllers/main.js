@@ -5,9 +5,9 @@
  * @name ticketInspectorApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the ticketInspectorApp
+ * Controller of the parkingInspectorApp
  */
-angular.module('ticketInspectorApp')
+angular.module('parkingInspectorApp')
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
