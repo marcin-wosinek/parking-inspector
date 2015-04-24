@@ -1,10 +1,10 @@
 {
   "name": "Parking inspector",
   "description": "Report car's that block your way",
-  "launch_path": "/index.html",
+  "launch_path": "/parking-inspector/index.html",
   "icons": {
-    "512": "/images/icon-512.png",
-    "128": "/images/icon-128.png"
+    "512": "/parking-inspector/images/icon-512.png",
+    "128": "/parking-inspector/images/icon-128.png"
   },
   "developer": {
     "name": "Marcin Wosinek",
