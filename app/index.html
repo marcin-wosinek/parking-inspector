@@ -22,13 +22,18 @@
 
     <!-- Add your site or application content here -->
 
+    <md-content>
+      <md-toolbar>
+        <md-button class="md-icon-button" aria-label="Settings">
+          <a href="#/">Home</a>
+        </md-button>
+        <md-button class="md-icon-button" aria-label="Settings">
+          <a href="#/report">Report</a>
+        </md-button>
+      </md-toolbar>
+    </md-content>
+
     <section layout="row" flex>
-      <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-is-locked-open="$mdMedia('gt-md')">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#/">Home</a></li>
-          <li><a href="#/report">Report</a></li>
-        </ul>
-      </md-sidenav>
 
       <md-content layout-padding>
         <div ng-view=""></div>
