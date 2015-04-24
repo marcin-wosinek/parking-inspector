@@ -1,0 +1,14 @@
+{
+  "name": "Parking inspector",
+  "description": "Report car's that block your way",
+  "launch_path": "/index.html",
+  "icons": {
+    "512": "/images/icon-512.png",
+    "128": "/images/icon-128.png"
+  },
+  "developer": {
+    "name": "Marcin Wosinek",
+    "url": "http://marcin-wosinek.github.io/blog/"
+  },
+  "default_locale": "en"
+}
