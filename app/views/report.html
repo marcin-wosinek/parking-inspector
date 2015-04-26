@@ -1,5 +1,12 @@
 <h4>Take a Picture</h4>
 <form id="form1" name="form1" enctype="multipart/form-data">
-  <input type="file" id="file1" name="file1" accept="image/*" capture="camera">
-  <input type="button" value="Save" />
+  <label for"image">Image:</label><br><input type="file" name="image" accept="image/*" capture="camera" ng-model="data.file" /><br>
+  <br>
+  <button ng-click="getLocation()">Get location</button><br>
+  <label for"image">Latitude:</label><br><input name="latitude" ng-model="data.latitude" /><br>
+  <label for"image">Longitude:</label><br><input name="longitude" ng-model="data.longitude" /><br>
+  <label for"image">Description:</label><br><textarea ng-model="data.description">
+  </textarea><br>
+
+  <input type="button" value="Save" ng-click="submit(data)"/>
 </form>
