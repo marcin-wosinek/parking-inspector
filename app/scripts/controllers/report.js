@@ -8,14 +8,13 @@
  * Controller of the parkingInspectorApp
  */
 angular.module('parkingInspectorApp')
-  .controller('ReportCtrl', function ($scope, $mdDialog) {
+  .controller('ReportCtrl', function ($scope, geolocation) {
+    $scope.data = {};
+
     $scope.getLocation = function() {
-      $mdDialog.show(
-        $mdDialog.alert()
-        .title('Geograpy data is not available')
-        .content('I can get your latitude & longitude. Please provide it manualy.')
-        .ariaLabel('Geography data alert')
-        .ok('Got it!')
-      );
+      geolocation.getLocation(function (position) {
+        $scope.data.latitude = position.coords.latitude;
+        $scope.data.longitude = position.coords.longitude;
+      });
     };
   });
