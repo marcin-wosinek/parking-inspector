@@ -26,6 +26,7 @@ angular.module('parkingInspectorApp')
           $rootScope.$apply();
         }, function() {
           error('Geolocation error');
+          $rootScope.$apply();
         });
       }
       else {
