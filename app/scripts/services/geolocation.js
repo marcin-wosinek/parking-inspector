@@ -9,11 +9,11 @@
  */
 angular.module('parkingInspectorApp')
   .service('geolocation', function($mdDialog, $rootScope) {
-    var error = function() {
+    var error = function(message) {
       $mdDialog.show(
         $mdDialog.alert()
         .title('Geograpy data is not available')
-        .content('I can get your latitude & longitude. Please provide it manualy.')
+        .content('I can get your latitude & longitude. Please provide it manualy. ' + message + '.')
         .ariaLabel('Geography data alert')
         .ok('Got it!')
       );
@@ -24,10 +24,12 @@ angular.module('parkingInspectorApp')
         navigator.geolocation.getCurrentPosition(function(position) {
           callback(position);
           $rootScope.$apply();
+        }, function() {
+          error('Geolocation error');
         });
       }
       else {
-        error();
+        error('Geolocation not available');
       }
     };
   });
